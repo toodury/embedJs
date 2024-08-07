@@ -1,19 +1,8 @@
 {
     "extends": "./tsconfig.json",
     "compilerOptions": {
-      "module": "CommonJS",
-      "target": "ESNext",
-      "lib": ["ESNext", "DOM"],
-      "allowJs": true,
-      "outDir": "./dist",
-      "strict": true,
-      "esModuleInterop": true,
-      "moduleResolution": "node",
-      "resolveJsonModule": true,
-      "skipLibCheck": true,
-      "isolatedModules": true,
-      "noEmit": true,
-      "baseUrl": ".",
+        "module": "commonjs",
+        "moduleResolution": "Node10",
         "declaration": false
     },
     "exclude": ["node_modules", "dist", "docs", "**/tests"]
