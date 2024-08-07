@@ -1,5 +1,5 @@
 import { RecursiveCharacterTextSplitter } from 'langchain/text_splitter';
-import { getTextExtractor } from 'office-text-extractor';
+const { getTextExtractor } = await import('office-text-extractor');
 import md5 from 'md5';
 
 import { BaseLoader } from '../interfaces/base-loader.js';
