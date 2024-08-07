@@ -8,7 +8,7 @@
     "scripts": {
         "clean": "rimraf dist/",
         "build:local": "npm run build:esm && npm run build:cjs",
-        "build": "npm run clean && npm run build:esm && npm run build:cjs",
+        "build": "npm run clean && npm run build:esm",
         "build:cjs": "tsc --outDir dist-cjs/ -p tsconfig.cjs.json && node scripts/move-cjs-to-dist.js && rimraf dist-cjs",
         "build:esm": "tsc --outDir dist/",
         "prepublishOnly": "npm run build",
